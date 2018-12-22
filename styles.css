@@ -1,0 +1,445 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+/*
+===Colors===
+
+Primary: #BF1A2F;
+
+*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+#headerContainer {
+    width: 100vw;
+    height: 21vh;
+    position: fixed;
+    top: 0;
+
+    z-index: 99;
+
+    background-color: rgba(255,255,255,0.9);
+
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+}
+#nav {
+    margin-top: 1vh;
+    height: 15vh;
+
+    color: #464646;
+    font-size: 1.1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    vertical-align: middle;
+
+    display: table;
+    table-layout: fixed;
+
+    border-spacing: 0;
+    padding: 0;
+
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+}
+.nav_item {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: #464646;
+}
+a:hover {
+    color: #DD6064;
+    cursor: pointer;
+}
+#title_table {
+    height: 15%;
+    color: #d1252a;
+    font-size: 1.2em;
+
+    width: 100%;
+    text-align: center;
+}
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+#logoTD {
+    height: inherit;
+    padding: 0;
+    margin: 0;
+}
+#textCenter {
+    bottom: 0;
+    height: 20%;
+    line-height: 200%;
+}
+#textCenter p{
+    color: #AD2222;
+    font-weight: bold;
+    font-size: 1.4em;
+    display: inline-block;
+    margin:0;
+    
+}
+
+
+#menu {
+    text-align: center;
+    width: 100%;
+    font-size: 1.25em;
+    border-collapse: collapse;
+}
+#menu td {
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    vertical-align: middle;
+}
+#menu a:link, #menu a:active, #menu a:visited {
+    color: #464646;
+}
+#menu a:hover {
+    cursor: pointer;
+    color: #AD2222;
+}
+#centerContainer {
+    margin-top: 23vh;
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    color: #464646;
+}
+#centerFull {
+    width: 100vw;
+
+}
+#main_slides {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#thisTD {
+    height: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+a {
+    text-decoration: none;
+}
+
+#teamTable {
+    width: 100%;
+}
+#teamTable td {
+    width: 25%;
+    height: 45vh;
+}
+.card {
+    width: 85%;
+    height: 90%;
+    background-color: #d1252a;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 0.5em;
+
+}
+
+
+.teamPhoto {
+    height: 40%;
+    width: 90%;
+    
+    display: block;
+    padding-top: 5%;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.teamText {
+    height: 50%;
+
+    text-align: center;
+    line-height: 100%;
+    margin-top: 5%;
+    width: 90%;
+    background-color: pink;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.teamText h3, h4 {
+    margin: 0;
+    line-height: 150%;
+}
+.teamText p {
+    text-align: left;
+    line-height: 125%;
+    font-size: 0.9em;
+}
+#pageTitle {
+
+    color: white;
+    width: 30vw;
+    height: 100%;
+    background-color: #d1252a;
+    vertical-align: middle;
+
+-webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+
+    box-shadow: 5vw 10vw #888;
+
+}
+#pageTitle h2 {
+    margin: 0;
+    margin-left: 10%;
+    padding-top: 3%;
+
+    line-height: 100%;
+    height: 4.5vh;
+
+}
+
+#title_image {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    height: 65%;
+    background-color: red;
+    overflow: hidden;
+
+}
+
+#soccer {
+    margin-right: -100%;
+}
+
+#slide_caption {
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    background-color: #d1252a;
+
+    display: table;
+
+}
+#slide_vertical {
+    
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+#slide_text {
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slide_title {
+    font-size: 1.5em;
+}
+
+
+#title_box {
+    width: 25vh;
+    height: 25vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+
+    left: 50%;
+    margin-left: -12.5vh;
+    margin-bottom: 18vh; 
+
+    border-radius: 1vh;
+
+    box-shadow: 2px 2px 7px rgba(50, 50, 50, 0.6);
+}
+
+#type_text {
+    position: absolute;
+    bottom: 0;
+
+    font-size: 10vw;
+    color: white;
+    line-height: 7.3vw;
+}
+
+
+#first_slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    right: 0;
+
+     transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+
+}
+#second_slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    right: -100%;
+
+     transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+
+}
+.title_images {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.spacer {
+    height: 5vh;
+}
+.content {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content_class {
+    position: relative;
+    width: 85;
+}
+.group {
+    width: 70%;
+}
+.bold {
+    font-weight: bold;
+    font-size: 3vw;
+}
+.huge {
+    font-weight: bold;
+    font-size: 4vw;
+}
+.medium {
+    font-weight: normal;
+    font-size: 2vw;
+}
+.red {
+    color: #d1252a;
+}
+
+.card_table {
+    width: 90%;
+    table-layout: fixed;
+    border-spacing: 2vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_table td {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5vw;
+}
+.card_photo {
+    width: 100%;
+    z-index: -9;
+    border-radius: 0.5vw;
+
+    opacity: 0.8;
+
+
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+.card_photo:hover {
+    opacity: 1;
+    /*transform: scale(1.02);
+    -webkit-transform: scale(1.02);*/
+}
+.card_tint {
+    background-color: #DD6064;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    border-radius: 0.5vw;
+
+    opacity: 0.1;
+}
+.caption {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    text-align: right;
+    bottom: 10%;
+    width: 100%;
+    color: #d1252a;
+    z-index: 2;
+
+}
+.pad {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+.centered_text {
+    text-align: center;
+    width: 100%;
+}
+
+.light_red {
+    color: #DD6064;
+}
+.split_bio{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.split_bio td {
+    width: 50%;
+    vertical-align: top;
+}
+.athlete_photo {
+    width: 70%;
+    border-radius: 0.5vw;
+    margin-left: 15%;
+}
+.bio_text {
+    padding-top: 2vh;
+    font-size: 1.4vw;
+}
+.large_spacer {
+    height: 10vw;
+}
+hr {
+    border: none;
+    width: 60vw;
+    background-color: #d1252a;
+    height: 0.1vh;  
+}

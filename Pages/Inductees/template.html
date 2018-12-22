@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>John Tasker</title>
+        <script src="../../slides.js"></script>
+        <script src="../../resize.js"></script>
+
+        <link rel="stylesheet" href="../../styles.css">
+
+        <script type="text/javascript">
+            function nav_resize() {
+                
+                if (window.scrollY > 15) {
+                    document.getElementById("headerContainer").style.height = "16vh";
+                    document.getElementById("nav").style.height = "10.7vh";
+                } else {
+                    document.getElementById("headerContainer").style.height = "21vh";
+                    document.getElementById("nav").style.height = "15vh";
+                }
+            }
+        </script>
+        <style type="text/css">
+            #test_content {
+                background-color: red;
+                width: 100%;
+                height: 50vh;
+            }
+        </style>
+    </head>
+    <body onload="resize()" onscroll="nav_resize()">
+        <div id="headerContainer">
+            <div id="nav">
+                <div class="nav_item"><a href="../../index.html">Home</a></div>
+                <div class="nav_item">Interviews</div>
+                <div class="nav_item"><a href="../inductees.html">Inductees</a></div>
+                <div class="nav_item" id="logoTD"><img src="../../MasonLogo.png" id="logo"></div>
+                <div class="nav_item">Records</div>
+                <div class="nav_item">Championships</div>
+                <div class="nav_item">More</div>
+            </div>
+            <table id="title_table">
+                <tr>
+                    <td><strong>MASON HALL OF FAME</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div id="centerContainer">
+            <div class="content group">
+                <div class="spacer"></div>
+                <div class="group red huge">John Tasker ('55)</div>
+                <div class="group light_red medium">Football, Basketball, Baseball</div>
+                
+                <div class="spacer"></div>
+                
+                <table class="split_bio">
+                    <tr>
+                        <td>
+                            <div class="bio_text">
+                                John Tasker was selected to the Virginia All-State basketball, football, and baseball teams his senior year and was the first GM athlete to be named as All-Metropolitan in any sport (football). He was the 1st in a series of outstanding running backs to excel on the gridiron at GM. John was a starting member of the 1954-55 GM basketball team that was runner-up in the Virginia State Tournament. After graduation, John played minor league baseball for the Detroit Tigers and later was selected to the "All-World" fast-pitch softball team in 1966 when playing for the Clearwater Florida Bombers. He won the Washington, D.C. AAU heavyweight boxing championship. 
+                            </div>
+                        </td>
+                        <td>
+                            <img src="../../Assets/InducteePhotos/JohnTasker.jpg" class="athlete_photo"/>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="spacer"></div>
+
+                <hr/>
+
+                <div class="spacer"></div>
+
+                <div class="group light_red bold">Records</div>
+
+                
+                <div class="spacer"></div>
+
+                <hr/>
+
+                <div class="spacer"></div>
+
+                <div class="group light_red bold">Championships</div>
+
+            </div>        
+        </div>
+    </body>
+</html>

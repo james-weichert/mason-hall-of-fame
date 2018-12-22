@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>George Mason High School Athletics Hall of Fame</title>
+        <script src="slides.js"></script>
+        <script src="resize.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/nuq4qnf.css">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <script type="text/javascript">
+            function nav_resize() {
+                
+                if (window.scrollY > 15) {
+                    document.getElementById("headerContainer").style.height = "16vh";
+                    document.getElementById("nav").style.height = "10.7vh";
+                } else {
+                    document.getElementById("headerContainer").style.height = "21vh";
+                    document.getElementById("nav").style.height = "15vh";
+                }
+            }
+        </script>
+        <style type="text/css">
+            #test_content {
+                background-color: red;
+                width: 100%;
+                height: 50vh;
+            }
+        </style>
+    </head>
+    <body onload="resize()" onscroll="nav_resize()">
+        <div id="headerContainer">
+            <div id="nav">
+                <div class="nav_item"><a href="index.html">Home</a></div>
+                <div class="nav_item">Interviews</div>
+                <div class="nav_item"><a href="Pages/inductees.html">Inductees</a></div>
+                <div class="nav_item" id="logoTD"><img src="MasonLogo.png" id="logo"></div>
+                <div class="nav_item">Records</div>
+                <div class="nav_item"><a href="Pages/championships.html">Championships</a></div>
+                <div class="nav_item">More</div>
+            </div>
+            <table id="title_table">
+                <tr>
+                    <td><strong>MASON HALL OF FAME</strong></td>
+                </tr>
+            </table>
+        </div>
+        <div id="centerContainer">
+            <div id="main_slides">
+                <div id="title_image">
+                    <div id="first_slide">
+                        <img src="Assets/swimmer.png" class="title_images"/>
+                    </div>
+                    <div id="second_slide">
+                        <img src="Assets/girls_soccer.png" id="soccer" class="title_images"/>
+                    </div>
+                    <div id="type_text"><strong>NEWS</strong></div>
+                </div>
+                <div id="slide_caption">
+                    <div id="slide_vertical">
+                        <div id="slide_text">
+                            <h3 id="slide_title">2017-18 Boys' Swim Team Captures State Championship</h3>
+                            <p id="slide_content">The George Mason 2017-2018 Boys’ Swim Team secured an historic 2A VHSL State Championship in February, 2018. The team featured outstanding individual and relay performances by...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer">
+                    
+            </div>
+            <div class="content" id="test_spacer">
+                
+            </div>
+        </div>
+    </body>
+</html>
